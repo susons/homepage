@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amazing Website v1.0</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">       
+        <script src="js/jquery.min.js"></script>
+        <link  href="css/fotorama.css" rel="stylesheet">
+        <script src="js/fotorama.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="1md.css">
+        <script src="js/main.js"></script>
+        
+   </head>
+<body> 
+  <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+          <!-- Brand and toggle get grouped for mobile -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <!-- When menubar collapses, only the "brand" button and toggle will remain -->
+          <a class="navbar-brand" href="index.html"><img src="dist/img/logo.png" alt="Amazing logo" width="30" height="30"></img></a> 
+          </div>   
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="myNavBar">            
+            <!-- Right side elements -->
+            <ul class="nav navbar-nav navbar-right nav-text">
+              <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+              <li class="active"><a href="articles.html"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Articles</a></li>
+              <li><a href="chat.html"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Chat</a></li>
+              <li><a href="register.html"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Register</a></li>
+              <li><a href="aboutus.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About us</a></li>             
+            </ul>                   
+            <!-- Right side elements -->
+          </div><!-- /.navbar-collapse -->  
+        </div>
+      </nav>
+  <!-- End of Navigation -->
+          <!-- Breadcrumb -->
+          <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active"><a href="articles.html">Articles</a></li>
+                <li class="breadcrumb-item active">Seperate Article</li>
+            </ol>
+    </div>
+    <!--End of Breadcrumb -->
+  <div class="row ">
+                <div class="col-sm-4">
+                        <div  class="fotorama">
+                <img class="" src="dist/img/time.jpg" alt="Pineapple" style="width: 100%; object-fit: contain"> 
+                <div ><img class="" src="dist/img/ny1.jpg" alt="Pineapple"  style="width: 100%; object-fit: contain"></div>
+                <div ><img class="" src="dist/img/ny2.jpg" alt="Pineapple"  style="width: 100%; object-fit: contain"></div> 
+                <div ><img class="" src="dist/img/ny3.jpg" alt="Pineapple"  style="width: 100%; object-fit: contain"></div>
+                <div ><img class="" src="dist/img/ny4.jpg" alt="Pineapple"  style="width: 100%; object-fit: contain"></div>
+                <div ><img class="" src="dist/img/ny5.jpg" alt="Pineapple"  style="width: 100%; object-fit: contain"></div> 
+                <div ><img class="" src="dist/img/ny6.jpg" alt="Pineapple"  style="width: 100%; object-fit: contain"></div> 
+                </div>
+                <div class="row">
+                                <div class="col-sm-4 "><img class="hover-shadow cursor" src="dist/img/ny1.jpg"  style="width: 100%; object-fit: contain" onclick="openModal();currentSlide(1)"></div>
+                                <div class="col-sm-4 "><img class="hover-shadow cursor" src="dist/img/ny2.jpg"  style="width: 100%; object-fit: contain" onclick="openModal();currentSlide(2)"></div> 
+                                <div class="col-sm-4 "><img class="hover-shadow cursor" src="dist/img/ny3.jpg"  style="width: 100%; object-fit: contain" onclick="openModal();currentSlide(3)"></div>      
+                </div>
+                <div class="row ">
+                                <div class="col-sm-4 "><img class="hover-shadow cursor" src="dist/img/ny4.jpg" style="width: 100%; object-fit: contain" onclick="openModal();currentSlide(4)"></div>
+                                <div class="col-sm-4 "><img class="hover-shadow cursor" src="dist/img/ny5.jpg" style="width: 100%; object-fit: contain" onclick="openModal();currentSlide(5)"></div> 
+                                <div class="col-sm-4 "><img class="hover-shadow cursor" src="dist/img/ny6.jpg" style="width: 100%; object-fit: contain" onclick="openModal();currentSlide(6)"></div>      
+                </div>
+                </div>  
+                <div id="myModal" class="modal">
+                                <span class="close cursor" onclick="closeModal()">&times;</span>
+                                <div class="modal-content">
+                              
+                                  <div class="mySlides">
+                                    <div class="numbertext">1 / 6</div>
+                                    <img src="dist/img/ny1.jpg" width="700px" height="700px">
+                                  </div>
+                              
+                                  <div class="mySlides">
+                                    <div class="numbertext">2 / 6</div>
+                                    <img src="dist/img/ny2.jpg" width="700px" height="700px">
+                                  </div>
+                              
+                                  <div class="mySlides">
+                                    <div class="numbertext">3 / 6</div>
+                                    <img src="dist/img/ny3.jpg" width="700px" height: "auto">
+                                  </div>
+                                  
+                                  <div class="mySlides">
+                                    <div class="numbertext">4 / 6</div>
+                                    <img src="dist/img/ny4.jpg" width="700px" height="700px">
+                                  </div>
+                                  <div class="mySlides">
+                                                <div class="numbertext">5 / 6</div>
+                                                <img src="dist/img/ny5.jpg" width="700px" height="700px">
+                                              </div>
+                                              <div class="mySlides">
+                                                        <div class="numbertext">6 / 6</div>
+                                                        <img src="dist/img/ny6.jpg" width="700px" height="700px">
+                                                      </div>
+                                  
+                                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                              
+                                  <div class="caption-container">
+                                    <p id="caption"></p>
+                                  </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                <div class="col-sm-7 jumbotron" style="margin-left: 60px;"><bb>   Narrator: Once upon a time, in the magical land of Equestria, there were two regal sisters who ruled together and created harmony for all the land. To do this, the eldest used her unicorn powers to raise the sun at dawn; the younger brought out the moon to begin the night. Thus, the two sisters maintained balance for their kingdom and their subjects, all the different types of ponies. But as time went on, the younger sister became resentful. The ponies relished and played in the day her elder sister brought forth, but shunned and slept through her beautiful night. One fateful day, the younger unicorn refused to lower the moon to make way for the dawn. The elder sister tried to reason with her, but the bitterness in the young one's heart had transformed her into a wicked mare of darkness: Nightmare Moon. 
+                                [lightning crack] 
+                                Narrator: She vowed that she would shroud the land in eternal night. Reluctantly, the elder sister harnessed the most powerful magic known to ponydom: the Elements of Harmony. Using the magic of the Elements of Harmony, she defeated her younger sister, and banished her permanently in the moon. The elder sister took on responsibility for both... 
+                                Narrator and Twilight Sparkle: ...sun and moon... 
+                                Twilight Sparkle: ...and harmony has been maintained in Equestria for generations since. Hmm... Elements of Harmony. I know I've heard of those before... but where? 
+                            
+                                [theme song] 
+                            
+                                Twinkleshine: There you are, Twilight! Moon Dancer is having a little get-together in the west castle courtyard. You wanna come? 
+                                Twilight Sparkle: Oh, sorry, girls... I've got a lot of studying to catch up on. 
+                                Twinkleshine: [sigh] Does that pony do anything except study? I think she's more interested in books than friends. 
+                                Twilight Sparkle: I know I've heard of the Elements of Harmony. 
+                            
+                                Spike: Ow! 
+                                Twilight Sparkle: Spike! Spi-ike! Spike? 
+                                Spike: [groan] 
+                                Twilight Sparkle: There you are. Quick, find me that old copy of Predictions and Prophecies. What's that for? 
+                                Spike: Well, it was a gift for Moon Dancer, but... 
+                                [squeak] 
+                                Twilight Sparkle: Oh Spike, you know we don't have time for that sort of thing. 
+                                Spike: But we're on a break! 
+                                Twilight Sparkle: No, no, no... no, no, no! [grunts] Spike! 
+                                Spike: It's over here! 
+                                [whack] 
+                                Twilight Sparkle: Ah! Elements, Elements, E, E, E... Aha! Elements of Harmony, see: Mare in the Moon? 
+                                Spike: Mare in the Moon? But that's just an old ponies' tale. 
+                                Twilight Sparkle: Mare, mare... aha! The Mare in the Moon, myth from olden pony times. A powerful pony who wanted to rule Equestria, defeated by the Elements of Harmony and imprisoned in the moon. Legend has it that on the longest day of the thousandth year, the stars will aid in her escape, and she will bring about nighttime eternal! [gasp] Spike! Do you know what this means? 
+                                Spike: No-- whoa! 
+                                [smack] 
+                                Spike: Ow! 
+                        </bb> 
+              </div>
+            </div>
+        </div>    
+        <!-- Footer Start -->
+        <footer>
+                        <div class="container">
+                            <div class="row">
+                                <div>
+                                    <span class="text-left">Copyright &copy; Amazing Website 2017</span>
+                                </div>
+                            </div>
+                        </div> 
+                      </footer>
+                      <!-- footer end-->
+                
+                      <script src="js/jquery-3.2.1.min.js"></script>
+                      <script src="js/bootstrap.min.js"></script>
+                      <script src="pagefadejs/pagefade-min.js"></script> 
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "inherit";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script> 
+                </body>
+                </html>
+                
